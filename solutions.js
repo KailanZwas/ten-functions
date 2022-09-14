@@ -21,8 +21,41 @@
  * concat
  */
 
+function isTrue(input){
+    return input === true;
+}
 
-// function isEqual() {
-//
-//
-// }
+function isFalse(input){
+    return input === false;
+}
+
+function not(input){
+    return !input
+}
+
+function addOne(input){
+    return ++input;
+}
+
+function isEven(input){
+    return input % 2 === 0;
+}
+
+function isIdentical(input){
+    return input == "input"
+}
+
+function isEqual(input){
+    return input === input;
+}
+
+function or(input){
+    return input || input;
+}
+
+function and(input){
+    return input && input;
+}
+function concat(Hello, World){
+    return "Hello" + "World";
+}
