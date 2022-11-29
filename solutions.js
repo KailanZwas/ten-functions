@@ -52,7 +52,7 @@ function isEqual(input){
 function or(input){
     return input || input;
 }
-
+ //test
 function and(input){
     return input && input;
 }
