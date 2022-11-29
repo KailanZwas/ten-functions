@@ -38,24 +38,33 @@ function addOne(input){
 }
 
 function isEven(input){
-    return input % 2 === 0;
+    if (typeof input === "boolean"){
+        return false;
+    } else if (input % 2 === 0){
+        return true;
+    } else {
+        return false;
+    }
 }
 
-function isIdentical(input){
-    return input == "input"
+
+function isIdentical(input, input1){
+    return input === input1;
 }
 
-function isEqual(input){
-    return input === input;
+function isEqual(input, input1){
+    return input == input1;
 }
 
 function or(input){
     return input || input;
 }
- //test
-function and(input){
-    return input && input;
+
+function and(input, input1){
+    return input && input1;
 }
-function concat(Hello, World){
-    return "Hello" + "World";
+
+function concat(input, input1){
+    return input.toString() + input1.toString();
+
 }
